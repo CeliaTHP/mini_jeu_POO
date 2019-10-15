@@ -59,7 +59,14 @@ end
 if player.hp > 0 && p1.hp <= 0 && p2.hp <= 0
 puts " WINNER WINNER CHICKEN DINNER ! Tu as gagné le combat, GG !".green
 else
-puts "Bah alors tu perds contre deux pauvres bots avec 10 hp ? ".red
+puts "Bah alors tu perds contre deux pauvres bots avec 10 hp ?\n ".red
+end
+
+puts "Pour relancer une partie, tape 'go'"
+print "> "
+go = gets.chomp.to_s
+if go == "go"
+	load'app_2.rb'
 end
 
 binding.pry
