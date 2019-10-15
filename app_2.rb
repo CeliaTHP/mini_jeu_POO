@@ -25,8 +25,10 @@ puts "Quelle action veux-tu effectuer ? \n \n"
 puts "a - Chercher une meilleure arme "
 puts "b - Chercher à se soigner\n\n"
 puts "Attaquer un joueur en vue : "
-puts "0 - #{p1.show_state}"
-puts "1 - #{p2.show_state}"
+print "0 - "
+	p1.show_state
+print "1 - "
+	p2.show_state
 print " >"
 cmd = gets.chomp.to_s
 if cmd == "a"
