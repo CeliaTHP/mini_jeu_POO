@@ -64,7 +64,7 @@ else
 puts "Bah alors tu perds contre deux pauvres bots avec 10 hp ?\n ".red
 end
 
-puts "Pour relancer une partie, tape 'go'"
+puts "Pour relancer une partie, tape 'go'".green
 print "> "
 go = gets.chomp.to_s
 if go == "go"
