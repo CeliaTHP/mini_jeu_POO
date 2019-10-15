@@ -57,9 +57,9 @@ end
 end
 
 if player.hp > 0 && p1.hp <= 0 && p2.hp <= 0
-puts " WINNER WINNER CHICKEN DINNER ! Tu as gagné le combat, GG !"
+puts " WINNER WINNER CHICKEN DINNER ! Tu as gagné le combat, GG !".green
 else
-puts "Bah alors tu perds contre deux pauvres bots avec 10 hp ? "
+puts "Bah alors tu perds contre deux pauvres bots avec 10 hp ? ".red
 end
 
 binding.pry

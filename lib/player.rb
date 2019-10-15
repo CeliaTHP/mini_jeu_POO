@@ -12,14 +12,14 @@ def show_state
 if hp > 0
 puts "Le joueur #{@name} a #{@hp} points de vie "
 else
-puts " Le joueur #{@name} est mort ! "
+puts " Le joueur #{@name} est mort ! ".red
 end
 end
 
 def gets_damage(dmg)
 @hp = @hp - dmg
 if @hp <=  0
-puts "Le joueur #{@name} est mort ! R.I.P"
+puts "Le joueur #{@name} est mort ! R.I.P".red
 end
 end
 
@@ -72,21 +72,21 @@ end
 def search_health_pack
 x = rand(1..6)
 if x >= 2 && x <= 5
-puts "Tu as trouvé un pack de soin ! + 50 HP"
+puts "Tu as trouvé un pack de soin ! + 50 HP".green
 if (@hp + 50) > 100
 @hp = 100
 else
 @hp = @hp + 50
 end
 elsif x == 6 
-puts " Wow insane un SUPER pack de soin , + 80 HP"
+puts " Wow insane un SUPER pack de soin , + 80 HP".green
 if (@hp + 80) > 100
 @hp = 100
 else
 @hp = @hp + 80
 end
 else
-puts "Tu n'as rien trouvé, dommage"
+puts "Tu n'as rien trouvé, dommage".red
 end
 puts " Tu as maintenant #{@hp} HP "
 end
